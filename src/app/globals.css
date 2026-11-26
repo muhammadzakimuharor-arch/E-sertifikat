@@ -1,26 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Cinzel:wght@400..800&family=Cormorant+Garamond:ital,wght@0,400..700;1,400..700&family=Great+Vibes&family=Inter:wght@400..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,400..700;1,400..700&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  color-scheme: light;
+  --vc-canvas: #F8FBFF;
+  --vc-surface: #FFFFFF;
+  --vc-primary: #0284C7;
+  --vc-primary-hover: #0369A1;
+  --vc-primary-active: #075985;
+  --vc-sky-soft: #E0F2FE;
+  --vc-sky-tint: #EBF5FF;
+  --vc-sky-border: #BAE6FD;
+  --vc-text: #0F172A;
+  --vc-muted: #64748B;
+  --vc-border: #E2E8F0;
+  --vc-danger-bg: #FEF2F2;
+  --vc-danger: #DC2626;
 }
 
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8FBFF;
+  color: #0F172A;
+  overscroll-behavior-y: none;
+}
+
+.font-mono-code {
+  font-family: var(--font-jetbrains), "JetBrains Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  body {
+    background: #FFFFFF !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only-card {
+    box-shadow: none !important;
+    border: 1px solid #E2E8F0 !important;
+  }
 }

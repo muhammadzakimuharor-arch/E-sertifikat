@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1414" width="2000" height="1414">
+  <defs>
+    <linearGradient id="skyCorner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#BAE6FD" stop-opacity="0.04" />
+    </linearGradient>
+    <linearGradient id="skyLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BAE6FD" />
+      <stop offset="50%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#BAE6FD" />
+    </linearGradient>
+    <pattern id="microDots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#0284C7" fill-opacity="0.06" />
+    </pattern>
+  </defs>
+
+  <!-- Pure White Canvas -->
+  <rect width="2000" height="1414" fill="#FFFFFF" />
+  <rect x="44" y="44" width="1912" height="1326" rx="20" fill="#F8FBFF" />
+  <rect x="44" y="44" width="1912" height="1326" rx="20" fill="url(#microDots)" />
+
+  <!-- Corner Geometric Sky Accents -->
+  <path d="M44 44 L440 44 L44 440 Z" fill="url(#skyCorner)" />
+  <path d="M1956 1370 L1560 1370 L1956 974 Z" fill="url(#skyCorner)" />
+  <path d="M44 200 L200 44" stroke="#7DD3FC" stroke-width="3" stroke-opacity="0.7" />
+  <path d="M1800 1370 L1956 1214" stroke="#7DD3FC" stroke-width="3" stroke-opacity="0.7" />
+
+  <!-- Clean Inner Architectural Double Frame -->
+  <rect x="64" y="64" width="1872" height="1286" rx="16" fill="#FFFFFF" fill-opacity="0.88" stroke="#BAE6FD" stroke-width="3" />
+  <rect x="86" y="86" width="1828" height="1242" rx="12" fill="none" stroke="#E2E8F0" stroke-width="2" />
+
+  <!-- Subtle Watermark Seal -->
+  <g transform="translate(1000,720)" opacity="0.045">
+    <circle cx="0" cy="0" r="290" fill="none" stroke="#0284C7" stroke-width="8" stroke-dasharray="18 14" />
+    <circle cx="0" cy="0" r="230" fill="none" stroke="#0284C7" stroke-width="4" />
+    <text x="0" y="16" text-anchor="middle" font-family="sans-serif" font-size="76" font-weight="800" letter-spacing="14" fill="#0284C7">VERICERT</text>
+  </g>
+
+  <!-- Header Crest & Brand -->
+  <g transform="translate(1000, 175)">
+    <rect x="-185" y="-36" width="370" height="54" rx="27" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="2" />
+    <text x="0" y="-1" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="#0284C7">VERICERT DIGITAL CREDENTIAL</text>
+  </g>
+
+  <!-- Main Certificate Title -->
+  <text x="1000" y="295" text-anchor="middle" font-family="sans-serif" font-size="68" font-weight="800" letter-spacing="3" fill="#0F172A">SERTIFIKAT PENGHARGAAN</text>
+  <rect x="760" y="330" width="480" height="5" rx="2.5" fill="url(#skyLine)" />
+
+  <!-- Recipient Lead -->
+  <text x="1000" y="530" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="500" fill="#64748B">Diberikan dengan hormat kepada:</text>
+
+  <!-- Name Underline Anchor -->
+  <line x1="480" y1="735" x2="1520" y2="735" stroke="#BAE6FD" stroke-width="3" />
+
+  <!-- Description Block -->
+  <text x="1000" y="905" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="500" fill="#475569">Atas partisipasi aktif dan kontribusi dalam kegiatan webinar resmi</text>
+  <text x="1000" y="950" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="400" fill="#64748B">yang diselenggarakan secara daring &amp; tercatat pada ledger terverifikasi VeriCert.</text>
+
+  <!-- Left Signature Area -->
+  <g transform="translate(220, 1110)">
+    <path d="M18 42 C52 8, 92 62, 128 24 C156 -4, 186 58, 224 22 C248 2, 276 36, 305 18" fill="none" stroke="#0284C7" stroke-width="4" stroke-linecap="round" opacity="0.85" />
+    <line x1="0" y1="68" x2="360" y2="68" stroke="#CBD5E1" stroke-width="2" />
+    <text x="0" y="108" font-family="sans-serif" font-size="26" font-weight="700" fill="#0F172A">Ketua Panitia Pelaksana</text>
+    <text x="0" y="142" font-family="sans-serif" font-size="20" font-weight="500" fill="#64748B">Otoritas Penerbit E-Sertifikat</text>
+  </g>
+
+  <!-- Center Security Stamp -->
+  <g transform="translate(1000, 1170)">
+    <circle cx="0" cy="0" r="64" fill="#EBF5FF" stroke="#BAE6FD" stroke-width="3" />
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#0284C7" stroke-width="2" stroke-dasharray="6 4" />
+    <text x="0" y="-4" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="800" fill="#0284C7">VERIFIED</text>
+    <text x="0" y="18" text-anchor="middle" font-family="monospace" font-size="13" font-weight="600" fill="#0369A1">SHA-256</text>
+  </g>
+
+  <!-- Right QR Frame Hint -->
+  <g transform="translate(1590, 990)">
+    <rect x="0" y="0" width="250" height="295" rx="16" fill="#F8FBFF" stroke="#E2E8F0" stroke-width="2" />
+    <text x="125" y="272" text-anchor="middle" font-family="monospace" font-size="17" font-weight="600" fill="#64748B">PINDAI VERIFIKASI</text>
+  </g>
+</svg>
